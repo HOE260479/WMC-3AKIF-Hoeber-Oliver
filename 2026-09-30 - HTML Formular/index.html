@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anmeldeformular</title>
+</head>
+<body bgcolor="131313" text="lightgray">
+<h1>Willkommen neuer Schüler!</h1>
+<br>
+<h1>Um Sie in unser System zu hinterlegen füllen Sie bitte das Formular aus.</h1>
+<form action="mailto:lorenzd@spengergasse.at?subject=Anmeldeformular" method="post" enctype="text/plain">
+    Vorname:<br>
+    <input type="text" name="vorname" required pattern="[A-Za-zÄÖÜäöüß]+"><br><br>
+    Nachname:<br>
+    <input type="text" name="nachname" required pattern="[A-Za-zÄÖÜäöüß]+"><br><br>
+    Geschlecht:<br>
+    <input type="radio" name="geschlecht" value="männlich"> männlich<br>
+    <input type="radio" name="geschlecht" value="weiblich"> weiblich<br>
+    <input type="radio" name="geschlecht" value="divers"> divers<br><br>
+    E-Mail:<br>
+    <input type="email" name="email" required><br><br>
+    Telefonnummer:<br>
+    <input type="tel" name="telefonnummer" required><br><br>
+    Diese Freigegenstände will ich besuchen:<br>
+    <input type="checkbox" name="freigegenstand1" value="Mathematik"> Mathematik<br>
+    <input type="checkbox" name="freigegenstand2" value="Physik"> Physik<br>
+    <input type="checkbox" name="freigegenstand3" value="Chemie"> Chemie<br>
+    <input type="checkbox" name="freigegenstand4" value="Biologie"> Biologie<br><br>
+    Klasse:<br>
+    <select name="klasse" required>
+        <option value="" disabled selected>Bitte wählen Sie Ihre Klasse aus</option>
+        <option value="1AKIF">1AKIF</option>
+        <option value="1BKIF">1BKIF</option>
+        <option value="1CKIF">1CKIF</option>
+        <option value="2AKIF">2AKIF</option>
+        <option value="2BKIF">2BKIF</option>
+        <option value="2CKIF">2CKIF</option>
+    </select><br><br>
+    Bitte wählen Sie Ihren höchsten Abschluss aus (Mehrfachauswahl möglich):<br>
+    <select id="hoechsterabschluss" name="hoechsterabschluss" multiple size="3">
+        <option value="Hochschule">Hochschule</option>
+        <option value="Pflichtschule">Pflichtschule</option>
+        <option value="Berufsreife">Berufsreife</option>
+        <option value="Fachhochschule">Fachhochschule</option>
+        <option value="Gymnasium">Gymnasium</option>
+        <option value="Kein Abschluss">Kein Abschluss</option>
+    </select><br><br>
+    Zusatzinformationen:<br>
+    <textarea name="Zusatzinformationen" rows="4" cols="50" placeholder="Hier können Sie uns noch etwas mitteilen... (Allergene, Medikation, ...)"></textarea><br><br>
+    <input type="submit" value="Absenden">
+    <input type="reset" value="Zurücksetzen">
+</form>
+</body>
+</html>
