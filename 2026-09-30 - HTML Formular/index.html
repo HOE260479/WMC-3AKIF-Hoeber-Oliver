@@ -11,24 +11,25 @@
 <br>
 <h1>Um Sie in unser System zu hinterlegen füllen Sie bitte das Formular aus.</h1>
 <form action="mailto:lorenzd@spengergasse.at?subject=Anmeldeformular" method="post" enctype="text/plain">
-    Vorname:<br>
+    Felder mit * sind Pflichtfelder.<br><br>
+    Vorname:*<br>
     <input type="text" name="vorname" required pattern="[A-Za-zÄÖÜäöüß]+"><br><br>
-    Nachname:<br>
+    Nachname:*<br>
     <input type="text" name="nachname" required pattern="[A-Za-zÄÖÜäöüß]+"><br><br>
     Geschlecht:<br>
     <input type="radio" name="geschlecht" value="männlich"> männlich<br>
     <input type="radio" name="geschlecht" value="weiblich"> weiblich<br>
     <input type="radio" name="geschlecht" value="divers"> divers<br><br>
-    E-Mail:<br>
+    E-Mail:*<br>
     <input type="email" name="email" required><br><br>
-    Telefonnummer:<br>
+    Telefonnummer:*<br>
     <input type="tel" name="telefonnummer" required><br><br>
     Diese Freigegenstände will ich besuchen:<br>
     <input type="checkbox" name="freigegenstand1" value="Mathematik"> Mathematik<br>
     <input type="checkbox" name="freigegenstand2" value="Physik"> Physik<br>
     <input type="checkbox" name="freigegenstand3" value="Chemie"> Chemie<br>
     <input type="checkbox" name="freigegenstand4" value="Biologie"> Biologie<br><br>
-    Klasse:<br>
+    Klasse:*<br>
     <select name="klasse" required>
         <option value="" disabled selected>Bitte wählen Sie Ihre Klasse aus</option>
         <option value="1AKIF">1AKIF</option>
