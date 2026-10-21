@@ -1,0 +1,60 @@
+body {
+    background-image: url(https://image.geo.de/35376652/t/vm/v8/w1440/r0/-/murnauer-moos--c-frederking-thaler-verlag--yannick-scherhan.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    min-height: 100vh;
+}
+
+nav {
+    text-align: center;
+    padding: 10px;
+}
+
+nav a {
+    display: inline-block;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    margin: 10px;
+}
+
+nav a:hover {
+    background-color: lightblue;
+    transform: scale(1.3);
+    font-weight: bold;
+}
+
+img a:hover {
+    transform: scale(1.3);
+}
+
+footer {
+    background-color: rgb(41, 41, 41);
+    text-align: center;
+    padding: 10px;
+}
+
+h1 {
+    text-align: center;
+    Color: rgb(41, 41, 41);
+}
+
+h1 :hover {
+    color: black;
+    transform: scale(1.3); 
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+main {
+    display: flex;
+}
+
+section {
+    flex: 1;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #191919;
+    color: white;
+}
