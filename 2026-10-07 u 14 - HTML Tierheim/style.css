@@ -7,6 +7,13 @@ body {
     min-height: 100vh;
 }
 
+.article {
+    background-color: rgba(0, 0, 0, 0.568);
+    padding: 20px;
+    margin: 10px;
+    border-radius: 10px;
+}
+
 nav {
     text-align: center;
     padding: 10px;
@@ -29,9 +36,11 @@ img a:hover {
 }
 
 footer {
-    background-color: rgb(41, 41, 41);
     text-align: center;
-    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.568);
+    padding: 20px;
+    margin: 10px;
+    border-radius: 10px;
 }
 
 h1 {
@@ -58,3 +67,5 @@ body {
     background-color: #191919;
     color: white;
 }
+
+
