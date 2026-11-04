@@ -1,0 +1,112 @@
+body {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 1rem;
+  font-family: "Source Sans 3", sans-serif;
+  color: #333;
+}
+
+img {
+  max-width: 100%;
+}
+
+/* Navigation */
+nav ul {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  background-color: #16416B;
+}
+
+nav a {
+  display: block;
+  padding: 1rem;
+  color: white;
+  text-decoration: none;
+}
+
+nav a:hover {
+  background-color: steelblue;
+}
+
+nav.footer-nav a {
+  text-transform: uppercase;
+}
+
+/* Header und Teaser */
+body > header{
+    margin-top: 1rem;
+}
+
+body > header,
+main > article {
+  padding: 1rem;
+  background-color: steelblue;
+  color: white;
+}
+
+header h1 {
+  margin: 0;
+}
+
+header h1 a {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  color: white;
+  text-decoration: none;
+}
+
+header address,
+footer address {
+  font-style: italic;
+}
+
+main > article figure {
+  margin: 1rem 0 0;
+  text-align: center;
+}
+
+/* Zitat */
+figure.zitat {
+  margin: 2rem 0;
+  padding: 1rem;
+  background-color: #edf1f7;
+  border-left: 10px solid dodgerblue;
+}
+
+figure.zitat blockquote {
+  font-style: italic;
+}
+
+figure.zitat cite a {
+  color: blue;
+}
+
+/* Kontaktformular */
+form {
+  padding: 1rem;
+  background-color: #f4f4f4;
+}
+
+form label,
+form input,
+form textarea,
+form button {
+  display: block;
+  margin-top: 1rem;
+}
+
+form input[type="text"],
+form input[type="email"],
+form textarea {
+  width: 75%;
+}
+
+/* Responsive Menü */
+@media (max-width: 600px) {
+  nav ul {
+    flex-direction: column;
+  }
+}

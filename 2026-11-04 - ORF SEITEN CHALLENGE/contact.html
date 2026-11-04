@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Kontakt - ORF News</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- MAIN NAV -->
+  <nav class="site-nav">
+    <ul>
+      <li><a href="index.html">News</a></li>
+      <li><a href="top32.html">Ö3 Top 32</a></li>
+      <li><a href="contact.html" aria-current="page">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- HEADER -->
+  <header>
+    <h1>
+      <a href="index.html">
+        <span>NEWS</span>
+        <img src="https://orf.at/mojo/1_4_1/storyserver//news/news/images/target_news.svg"
+             alt="ORF.at Logo" width="150" height="100">
+      </a>
+    </h1>
+    <address>
+      ORF-Zentrum<br>
+      Würzburggase 30<br>
+      1136 Wien
+    </address>
+  </header>
+
+  <main>
+    <form action="#" method="post">
+      <!-- Name -->
+      <label for="name">Ihr Name:</label>
+      <input type="text" id="name" name="name" autocomplete="name" required>
+
+      <!-- Email -->
+      <label for="email">Ihre Email:</label>
+      <input type="email" id="email" name="email" autocomplete="email" required>
+
+      <!-- Message -->
+      <label for="message">Ihre Nachricht:</label>
+      <textarea id="message" name="message" rows="10" required></textarea>
+
+      <!-- DSGVO -->
+      <label for="dsgvo">
+        <input type="checkbox" id="dsgvo" name="dsgvo" required>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum explicabo molestiae tenetur totam. Alias delectus dicta eius eligendi expedita iste iusto nesciunt placeat quod repellat suscipit, unde ut veritatis voluptatibus?
+      </label>
+
+      <button type="submit">Abschicken</button>
+    </form>
+  </main>
+
+</body>
+</html>
